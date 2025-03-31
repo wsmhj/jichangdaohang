@@ -23,7 +23,7 @@ export async function generateMetadata({ params: { category } }: CategoryPagePro
   }
 
   return {
-    title: capitalize(category) + ' Developer Tools',
+    title: capitalize(category),
     description: t('meta_description'),
   }
 }
