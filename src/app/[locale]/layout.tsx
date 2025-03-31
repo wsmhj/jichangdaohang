@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
   authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
-  keywords: 'developer tools, dev tools, develop tool',
+  keywords: '',
   alternates: {
     canonical: "https://DevToolset.net/", languages: {
       "en-US": "https://DevToolset.net/en/",
