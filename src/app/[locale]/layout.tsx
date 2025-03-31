@@ -27,7 +27,6 @@ export const metadata: Metadata = {
   },
   description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
   authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
-  keywords: '',
   alternates: {
     canonical: "https://DevToolset.net/", languages: {
       "en-US": "https://DevToolset.net/en/",
@@ -40,7 +39,6 @@ export const metadata: Metadata = {
     { rel: "icon", type: 'image/ico', url: "/favicon.ico" },
     { rel: "apple-touch-icon", sizes: "180x180", url: "/favicon-180x180.png" },
     { rel: "android-chrome", sizes: "512x512", url: "/favicon-512x512.png" },
-
   ],
 }
 
