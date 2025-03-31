@@ -22,11 +22,11 @@ const sansFont = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'DevToolset: Open-Source Database-free Developer Tools Navigator',
-    template: '%s | DevToolset'
+    default: '机场推荐-全网最全',
+    template: '%s | 机场推荐'
   },
-  description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
-  authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
+  description: '最全面的机场节点导航推荐',
+  authors: { name: '机场推荐', url: 'https://DevToolset.net/' },
   alternates: {
     canonical: "https://DevToolset.net/", languages: {
       "en-US": "https://DevToolset.net/en/",
