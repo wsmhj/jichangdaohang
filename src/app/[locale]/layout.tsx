@@ -22,24 +22,31 @@ const sansFont = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: '机场推荐-全网最全',
-    template: '%s | 机场推荐'
+    default: 'DevToolset: Open-Source Database-free Developer Tools Navigator',
+    template: '%s | DevToolset'
   },
-  description: '最全面的机场节点导航推荐',
-  authors: { name: '机场推荐', url: 'https://DevToolset.net/' },
+  description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
+  authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
+  keywords: 'developer tools, dev tools, develop tool',
   alternates: {
     canonical: "https://DevToolset.net/", languages: {
       "en-US": "https://DevToolset.net/en/",
       "zh-CN": "https://DevToolset.net/zh/",
     }
   },
-  icons: [
-    { rel: "icon", type: 'image/png', sizes: "16x16", url: "/favicon-16x16.png" },
-    { rel: "icon", type: 'image/png', sizes: "32x32", url: "/favicon-32x32.png" },
-    { rel: "icon", type: 'image/ico', url: "/favicon.ico" },
-    { rel: "apple-touch-icon", sizes: "180x180", url: "/favicon-180x180.png" },
-    { rel: "android-chrome", sizes: "512x512", url: "/favicon-512x512.png" },
-  ],
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/favicon-180x180.png', sizes: '180x180', type: 'image/png' }
+    ],
+    other: [
+      { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png', rel: 'android-chrome' }
+    ]
+  }
 }
 
 export default async function RootLayout({
