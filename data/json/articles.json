@@ -1,9 +1,16 @@
 [
   {
-    "title": "Add New Developer Tools To DevToolset",
-    "description": "How to add new developer tools to DevToolset",
+    "title": "添加新的机场节点到网站",
+    "description": "如何添加新的机场节点到推荐列表",
     "date": "2024-08-14T13:14:40.737Z",
     "lastModified": "2024-08-14T13:14:40Z",
     "path": "data/md/add-new-developer-tools.md"
+  },
+  {
+    "title": "如何选择适合自己的机场",
+    "description": "教你如何选择一个适合自己的机场服务商",
+    "date": "2024-08-15T01:14:40.737Z",
+    "lastModified": "2024-08-15T01:14:40Z",
+    "path": "data/md/deploy-own-devtoolset.md"
   }
 ]
