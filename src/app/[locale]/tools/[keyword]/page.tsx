@@ -15,6 +15,7 @@ import {getTranslations, getLocale} from 'next-intl/server';
 
 export async function generateMetadata({ params: { keyword } }: CategoryPageProps) {
   const t = await getTranslations('tools');
+  const locale = await getLocale();
 
   function capitalize(string: string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -23,7 +24,9 @@ export async function generateMetadata({ params: { keyword } }: CategoryPageProp
   const decodeKeyword = decodeURIComponent(keyword)
 
   return {
-    title: capitalize(decodeKeyword) + ' Developer Tools',
+    title: locale === 'en' 
+      ? `${capitalize(decodeKeyword)} Airport Recommendations | VPN Node Navigation`
+      : `${capitalize(decodeKeyword)} 机场推荐 | VPN翻墙节点导航`,
     description: t('meta_description')
   }
 }

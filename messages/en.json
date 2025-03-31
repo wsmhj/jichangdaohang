@@ -1,44 +1,44 @@
 {
   "home": {
-    "meta_title": "DevToolset: Open-Source Database-free Developer Tools Navigator",
-    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
-    "h2": "Open-Source & Database-Free Developer Tools Navigator",
-    "description": "Find Every Essential Developer Tools You Need for Your Development Journey"
+    "meta_title": "Airport Recommendations - The Most Comprehensive VPN Node Navigation",
+    "meta_description": "Find comprehensive recommendations for premium, established, and affordable VPN services, including Clash, Shadowrocket, V2ray, and Trojan airports, with stable nodes to access global internet.",
+    "h2": "The Most Comprehensive Airport Navigation Platform",
+    "description": "Find all the high-quality VPN nodes and services you need here"
   },
   "category": {
-    "meta_title": "Category",
-    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
+    "meta_title": "Airport Categories",
+    "meta_description": "Airport node recommendations organized by different types, including premium airports, budget-friendly options, Clash airports, and Shadowrocket airports",
     "homeBtn": "Home",
     "categoryBtn": "Category",
-    "h1": "Develop Tools Category",
-    "h2": "Find Every Developer Tools You Need Here",
-    "h2description": "All developer tools are sorted alphabetically"
+    "h1": "Airport Navigation Categories",
+    "h2": "Find All Airport Nodes You Need Here",
+    "h2description": "All airports are sorted alphabetically"
   },
   "article": {
-    "meta_title": "Article",
-    "meta_description": "Read our latest articles on newest developer tools and best practices.",
+    "meta_title": "Airport Review Articles",
+    "meta_description": "Read detailed airport review articles to understand the pros and cons, speed tests, and stability analysis of various VPN services",
     "h1": "Articles",
-    "h2": "Read More About DevToolset",
+    "h2": "Read More About Airport Nodes",
     "homeBtn": "Home",
     "articleBtn": "Article",
     "backToArticles": "Back to articles"
   },
   "changelog": {
     "meta_title": "Changelog",
-    "meta_description": "Stay up to date with the latest updates in DevToolset.net",
+    "meta_description": "Stay up to date with the latest updates on our airport recommendation site",
     "h1": "Changelog",
-    "h2": "Stay up to date with the latest updates in DevToolset.net",
+    "h2": "Stay up to date with the latest updates on our airport recommendation site",
     "homeBtn": "Home",
     "changelogBtn": "Changelog"
   },
   "tools": {
-    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
-    "h2_1": "All developer tools related to",
+    "meta_description": "Find comprehensive recommendations for premium, established, and affordable VPN services with stable nodes",
+    "h2_1": "All airport nodes related to",
     "h2_2": "",
     "homeBtn": "Home"
   },
   "search": {
-    "input_placeholder": "Search tools by name / tags...",
+    "input_placeholder": "Enter airport name, protocol type, etc. to search",
     "heading": "Suggestions",
     "more": "More",
     "button": "Search"
@@ -49,23 +49,22 @@
     "moreCategoryBtn": "More",
     "moreCategoryDescription": "More Categories",
     "articleBtn": "Article",
-    "articleDescription": "Open-Source Database-free Developer Tools Navigator",
-    "article1Title": "Adding New Developer Tools to DevToolset",
-    "article2Title": "Deploy your own DevToolset",
+    "articleDescription": "The Most Comprehensive Airport Navigation Platform",
+    "article1Title": "Add New Airport Node to Website",
+    "article2Title": "How to Choose the Right Airport for You",
     "moreArticleBtn": "More",
-    "moreArticleDescription": "More articles",
+    "moreArticleDescription": "More Articles",
     "changelogBtn": "Changelog",
-    "submitToolBtn": "Submit Tool"
+    "submitToolBtn": "Submit Airport"
   },
   "footer": {
-    "description": "OpenSource & Database-free Developer Tools Navigator",
-    "builtWith": "Built with",
+    "description": "The Most Comprehensive Airport Navigation Platform",
     "quickLinks": "Quick Links",
     "home": "Home",
     "category": "Category",
     "article": "Article",
     "changelog": "Changelog",
-    "privacy": "Privacy",
+    "privacy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "legal": "Legal",
     "connect": "Connect",
@@ -74,10 +73,10 @@
   },
   "toolsList": {
     "more": "More",
-    "tools": "tools"
+    "tools": ""
   },
   "articleList": {
     "h2": "Articles",
-    "moreArticles": "More articles"
+    "moreArticles": "More Articles"
   }
 }

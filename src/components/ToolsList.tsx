@@ -74,7 +74,7 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 '>
             <CardHeader>
               <a 
-                href={`${resource.url}?utm_source=devtoolset.net`} 
+                href={`${resource.url}?utm_source=jichangtuijian.shop`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
@@ -124,7 +124,7 @@ const ToolsPage = ({ category, locale }: { category: categoryProps, locale: stri
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
-                href={`${resource.url}?utm_source=devtoolset.net`} 
+                href={`${resource.url}?utm_source=jichangtuijian.shop`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
@@ -176,7 +176,7 @@ const SearchPage = ({ searchData }: searchPageProps) => {
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
-                href={`${resource.url}?utm_source=devtoolset.net`} 
+                href={`${resource.url}?utm_source=jichangtuijian.shop`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"

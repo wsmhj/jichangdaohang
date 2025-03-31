@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { Link } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { useTranslations } from 'next-intl';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -21,9 +20,6 @@ export default function AdminArticlesPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const router = useRouter();
-  const t = useTranslations('admin.articles');
-  const tCommon = useTranslations('admin.common');
-  const tDashboard = useTranslations('admin.dashboard');
 
   const checkAuth = useCallback(async () => {
     try {
@@ -75,8 +71,8 @@ export default function AdminArticlesPage() {
     }
   }
 
-  if (isLoading) return <div className="container mx-auto p-4">{tCommon('loading')}</div>;
-  if (error) return <div className="container mx-auto p-4">{tCommon('error')}: {error}</div>;
+  if (isLoading) return <div className="container mx-auto p-4">Loading...</div>;
+  if (error) return <div className="container mx-auto p-4">Error: {error}</div>;
 
   return (
     <div className="container mx-auto p-4">
@@ -84,32 +80,32 @@ export default function AdminArticlesPage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/admin">{tDashboard('title')}</BreadcrumbLink>
+              <BreadcrumbLink href="/admin">Admin</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/admin/articles">{t('title')}</BreadcrumbLink>
+              <BreadcrumbLink href="/admin/articles">Articles</BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <h1 className="text-2xl font-bold mb-4">{t('title')}</h1>
+      <h1 className="text-2xl font-bold mb-4">Article Management</h1>
       <div className="mb-4 flex justify-between">
         <div>
-          <Button onClick={handleSync} className="mr-2">{tCommon('sync')}</Button>
+          <Button onClick={handleSync} className="mr-2">Sync Articles</Button>
           <Link href="/admin/articles/create">
-            <Button>{t('create')}</Button>
+            <Button>Create New Article</Button>
           </Link>
         </div>
       </div>
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead>{t('name')}</TableHead>
-            <TableHead>{t('description')}</TableHead>
-            <TableHead>{t('createdAt')}</TableHead>
-            <TableHead>{t('updatedAt')}</TableHead>
-            <TableHead>{tCommon('actions')}</TableHead>
+            <TableHead>Title</TableHead>
+            <TableHead>Description</TableHead>
+            <TableHead>Created</TableHead>
+            <TableHead>Last Modified</TableHead>
+            <TableHead>Actions</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -126,7 +122,7 @@ export default function AdminArticlesPage() {
               <TableCell>
                 {/* @ts-ignore */}
                 <Link href={`/admin/articles/edit?path=${encodeURIComponent(article.path)}`}>
-                  <Button>{tCommon('edit')}</Button>
+                  <Button>Edit</Button>
                 </Link>
               </TableCell>
             </TableRow>
@@ -134,7 +130,7 @@ export default function AdminArticlesPage() {
         </TableBody>
       </Table>
       <div className="my-8">
-        <Button onClick={handleLogout}>{tCommon('logout')}</Button>
+        <Button onClick={handleLogout}>Log out</Button>
       </div>
     </div>
   );

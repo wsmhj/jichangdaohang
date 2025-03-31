@@ -1,47 +1,48 @@
 {
   "home": {
-    "meta_title": "DevToolset: 开源、无数据库架构的开发者工具资源导航平台",
-    "meta_description": "在这里找到您在开发旅程中需要的每一种开发者工具",
-    "h2": "开源、无数据库架构的开发者工具资源导航平台",
-    "description": "在这里找到您在开发旅程中需要的每一种开发者工具"
+    "meta_title": "机场推荐-全网最全VPN翻墙节点导航站",
+    "meta_description": "提供最全面的高端机场、老牌机场、便宜机场推荐，包含Clash机场、Shadowrocket机场、V2ray机场和Trojan机场等各类付费稳定翻墙节点导航与评测，帮助您轻松访问全球网络。",
+    "h2": "全网最全机场推荐导航平台",
+    "description": "在这里找到您需要的所有高质量翻墙节点和VPN服务"
   },
   "category": {
-    "meta_title": "分类",
-    "meta_description": "在这里找到您在开发旅程中需要的每一种开发者工具",
+    "meta_title": "机场分类",
+    "meta_description": "按照不同类型分类的机场节点推荐，包括高端机场、便宜机场、Clash机场和Shadowrocket机场等",
     "homeBtn": "首页",
     "categoryBtn": "分类",
-    "h1": "开发工具分类",
-    "h2": "在这里找到您在开发旅程中需要的每一种开发者工具",
-    "h2description": "所有开发者工具按字母顺序排列"
+    "h1": "机场分类导航",
+    "h2": "在这里找到您需要的各类机场节点",
+    "h2description": "所有机场按字母顺序排列"
   },
   "article": {
-    "meta_title": "文章",
-    "meta_description": "阅读文章，了解最新的开发者工具以及开发经验、技巧和最佳实践",
+    "meta_title": "机场评测文章",
+    "meta_description": "阅读详细的机场评测文章，了解各类翻墙软件和VPN服务的优缺点、速度测试和稳定性分析",
     "homeBtn": "首页",
     "articleBtn": "文章",
     "h1": "文章",
-    "h2": "阅读更多有关DevToolset的文章",
+    "h2": "阅读更多有关机场节点的评测文章",
     "backToArticles": "返回文章列表"
   },
   "changelog": {
     "meta_title": "更新日志",
-    "meta_description": "查看DevToolset的更新日志",
+    "meta_description": "查看机场推荐网站的更新日志和最新变化",
     "h1": "更新日志",
-    "h2": "查看DevToolset的更新日志",
+    "h2": "查看机场推荐网站的更新日志",
     "homeBtn": "首页",
     "changelogBtn": "更新日志"
   },
   "tools": {
-    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
+    "meta_description": "提供最全面的高端机场、老牌机场、便宜机场推荐，包含Clash机场、Shadowrocket机场等各类付费稳定翻墙节点导航",
     "h2_1": "所有与 ",
-    "h2_2": " 相关的开发者工具",
+    "h2_2": " 相关的机场节点",
     "homeBtn": "首页"
   },
   "search": {
-    "input_placeholder": "输入名词、关键词等搜索相关工具",
+    "input_placeholder": "输入机场名称、协议类型等搜索相关节点",
     "heading": "建议",
     "more": "更多",
-    "button": "搜索"
+    "button": "搜索",
+    "no_results": "未找到相关结果"
   },
   "navigation": { 
     "homeBtn": "首页",
@@ -49,17 +50,16 @@
     "moreCategoryBtn": "更多",
     "moreCategoryDescription": "更多分类",
     "articleBtn": "文章",
-    "articleDescription": "开源、无数据库架构的开发者工具资源导航平台",
-    "article1Title": "添加新的开发者工具到DevToolset",
-    "article2Title": "部署你自己的DevToolset",
+    "articleDescription": "全网最全机场推荐导航平台",
+    "article1Title": "添加新的机场节点到网站",
+    "article2Title": "如何选择适合自己的机场",
     "moreArticleBtn": "更多",
     "moreArticleDescription": "更多文章",
     "changelogBtn": "更新日志",
-    "submitToolBtn": "提交工具"
+    "submitToolBtn": "提交机场"
   },
   "footer": { 
-    "description": "开源、无数据库架构的开发者工具资源导航平台",
-    "builtWith": "基于",
+    "description": "全网最全机场推荐导航平台",
     "quickLinks": "快速链接",
     "home": "首页",
     "category": "分类",
@@ -74,99 +74,10 @@
   },
   "toolsList": {
     "more": "更多",
-    "tools": "工具"
+    "tools": ""
   },
   "articleList": {
     "h2": "文章",
     "moreArticles": "更多文章"
-  },
-  "admin": {
-    "login": {
-      "title": "管理员登录",
-      "password": "密码",
-      "submit": "登录",
-      "invalid": "密码无效"
-    },
-    "dashboard": {
-      "title": "管理后台",
-      "welcome": "欢迎来到DevToolset管理后台",
-      "articles": "文章管理",
-      "categories": "分类管理",
-      "tools": "工具管理",
-      "settings": "设置"
-    },
-    "articles": {
-      "title": "文章管理",
-      "create": "创建新文章",
-      "edit": "编辑文章",
-      "delete": "删除",
-      "name": "文章名称",
-      "slug": "文章链接",
-      "content": "文章内容",
-      "submit": "提交",
-      "cancel": "取消",
-      "preview": "预览",
-      "back": "返回文章列表",
-      "saveSuccess": "文章保存成功",
-      "deleteSuccess": "文章删除成功",
-      "confirmDelete": "确定要删除这篇文章吗？",
-      "published": "已发布",
-      "draft": "草稿",
-      "status": "状态",
-      "createdAt": "创建时间",
-      "updatedAt": "更新时间"
-    },
-    "categories": {
-      "title": "分类管理",
-      "category": "分类",
-      "selectLocale": "选择语言",
-      "create": "创建新分类",
-      "edit": "编辑分类",
-      "delete": "删除",
-      "back": "返回分类列表",
-      "submit": "提交",
-      "cancel": "取消",
-      "saveSuccess": "分类保存成功",
-      "deleteSuccess": "分类删除成功",
-      "confirmDelete": "确定要删除这个分类吗？"
-    },
-    "tools": {
-      "title": "工具管理",
-      "create": "添加新工具",
-      "edit": "编辑工具",
-      "delete": "删除",
-      "name": "工具名称",
-      "description": "描述",
-      "url": "网址",
-      "tags": "标签",
-      "submit": "提交",
-      "cancel": "取消",
-      "back": "返回工具列表",
-      "saveSuccess": "工具保存成功",
-      "deleteSuccess": "工具删除成功",
-      "confirmDelete": "确定要删除这个工具吗？",
-      "addTag": "添加标签",
-      "removeTag": "移除标签"
-    },
-    "common": {
-      "loading": "加载中...",
-      "error": "出错了",
-      "retry": "重试",
-      "save": "保存",
-      "edit": "编辑",
-      "delete": "删除",
-      "create": "创建",
-      "search": "搜索",
-      "filter": "筛选",
-      "actions": "操作",
-      "confirm": "确认",
-      "cancel": "取消",
-      "success": "成功",
-      "failed": "失败",
-      "noData": "暂无数据",
-      "back": "返回",
-      "logout": "退出登录",
-      "sync": "同步数据"
-    }
   }
 }

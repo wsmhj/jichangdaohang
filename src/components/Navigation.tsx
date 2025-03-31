@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'; // 确保导入 React
 import { useState, useEffect } from 'react'
-import { Link, usePathname }from "@/lib/i18n";
+import { Link, usePathname } from "@/lib/i18n";
+import { useLocale } from 'next-intl';
 import { Github, MenuIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -36,6 +37,8 @@ export const Navigation = ({ categories }: navigationProp ) => {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations('navigation');
+  const size = 25;
+  const locale = useLocale();
 
   const menuItems: {
     label: string;
@@ -53,10 +56,6 @@ export const Navigation = ({ categories }: navigationProp ) => {
       label: t('articleBtn'),
       href: "/article",
     },
-    {
-      label: t('changelogBtn'),
-      href: "/changelog",
-    },
   ];
   const isMenuItemActive = (href: string) => {
     // console.log(pathname, href);
@@ -68,7 +67,6 @@ export const Navigation = ({ categories }: navigationProp ) => {
   }, [pathname]);
 
   
-  const size = 30;
   const ListItem = React.forwardRef<
     React.ElementRef<"a">,
     React.ComponentPropsWithoutRef<"a">
@@ -107,7 +105,7 @@ export const Navigation = ({ categories }: navigationProp ) => {
               height={size}
               alt="DomainScore"
             />
-            <span className="inline-block font-bold">Dev Toolset</span>
+            <span className="inline-block font-bold">{locale === 'en' ? 'Airport Recommendations' : '机场推荐'}</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <NavigationMenu>
@@ -156,7 +154,7 @@ export const Navigation = ({ categories }: navigationProp ) => {
                             href="/"
                           >
                             <div className="mb-2 mt-4 text-lg font-medium">
-                              Dev Toolset
+                              {locale === 'en' ? 'Airport Recommendations' : '机场推荐'}
                             </div>
                             <p className="text-xs leading-tight text-muted-foreground">
                               {t('articleDescription')}
@@ -176,13 +174,6 @@ export const Navigation = ({ categories }: navigationProp ) => {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/changelog" legacyBehavior passHref>
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'font-medium', '/changelog' === pathname && "font-extrabold")}>
-                      {t('changelogBtn')}
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </nav>
@@ -194,17 +185,7 @@ export const Navigation = ({ categories }: navigationProp ) => {
           <div className="flex items-center gap-1">
             <ThemeModeButton />
             <LocaleButton />
-            
           </div>
-          <Link
-            href={"https://github.com/iAmCorey/devtoolset"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground ml-1"
-          >
-            <Github className="h-4 w-4" />
-            <span className="sr-only">GitHub</span>
-          </Link>
           <Sheet
               open={mobileMenuOpen}
               onOpenChange={(open) => setMobileMenuOpen(open)}

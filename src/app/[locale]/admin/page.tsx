@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Link } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
-import { useTranslations } from 'next-intl';
+
 
 import {
   Breadcrumb,
@@ -19,8 +19,6 @@ export default function AdminPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
-  const t = useTranslations('admin');
-  const tCommon = useTranslations('admin.common');
 
   const checkAuth = useCallback(async () => {
     try {
@@ -44,11 +42,11 @@ export default function AdminPage() {
 
 
   if (isLoading) {
-    return <div className="container mx-auto p-4">{tCommon('loading')}</div>;
+    return <div className="container mx-auto p-4">Loading...</div>;
   }
 
   if (error) {
-    return <div className="container mx-auto p-4">{tCommon('error')}: {error}</div>;
+    return <div className="container mx-auto p-4">Error: {error}</div>;
   }
 
   const handleLogout = async () => {
@@ -66,28 +64,28 @@ export default function AdminPage() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/admin">{t('dashboard.title')}</BreadcrumbLink>
+              <BreadcrumbLink href="/admin">Admin</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
           </BreadcrumbList>
         </Breadcrumb>
       </div>
 
-      <h1 className="text-2xl font-bold my-6">{t('dashboard.title')}</h1>
-      <h2 className="text-xl font-bold my-4">{t('dashboard.articles')}</h2>
+      <h1 className="text-2xl font-bold my-6">Admin Dashboard</h1>
+      <h2 className="text-xl font-bold my-4">Articles Management</h2>
       <div className="mb-4 pb-8 border-b">
         <Link href="/admin/articles">
-          <Button>{t('dashboard.articles')}</Button>
+          <Button>Manage Articles</Button>
         </Link>
       </div>
-      <h2 className="text-xl font-bold mb-4">{t('dashboard.categories')}</h2>
+      <h2 className="text-xl font-bold mb-4">Category Management</h2>
       <div className="mb-8">
         <Link href="/admin/category">
-          <Button>{t('dashboard.categories')}</Button>
+          <Button>Manage Category</Button>
         </Link>
       </div>
       <div className="my-8">
-        <Button onClick={handleLogout}>{tCommon('logout')}</Button>
+        <Button onClick={handleLogout}>Log out</Button>
       </div>
     </div>
   );

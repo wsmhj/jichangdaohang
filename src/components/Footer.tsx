@@ -3,94 +3,72 @@ import { Link } from "@/lib/i18n";
 import React from 'react'; // 确保导入 React
 import Image from "next/image";
 import IconImage from "../../public/favicon.svg";
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 
 export function Footer() {
   const t = useTranslations('footer');
   const size = 30;
+  const locale = useLocale();
+  
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 text-muted-foreground border-t">
-      <div className="flex flex-col justify-center items-center max-w-7xl text-center mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:text-start">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
-          <div className='flex flex-col justify-center items-center lg:items-start lg:justify-start'>
-            <h3 className="text-sm font-bold tracking-normal">
-              <Link href="/" className="flex items-center space-x-2">
-                <Image
-                  src={IconImage}
-                  className="block opacity-80"
-                  width={size}
-                  height={size}
-                  alt="DomainScore"
-                />
-                <span className="inline-block font-bold">Dev Toolset</span>
-              </Link>
-            </h3>
-            <p className="mt-4 text-xs ">
-              {t('description')}
-              
-            </p>
-            <div className='mt-4 text-xs '>
-              {t('builtWith')}
-              <Link href="https://gitbase.app/" target='_black' className="ml-1 text-xs underline">
-                GitBase
-              </Link>
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className='flex flex-col items-start space-y-4'>
+            <Link href="/" className="flex items-center space-x-2">
+              <Image
+                src={IconImage}
+                className="block opacity-80"
+                width={size}
+                height={size}
+                alt="DomainScore"
+              />
+              <span className="inline-block font-bold">{locale === 'en' ? 'Airport Recommendations' : '机场推荐'}</span>
+            </Link>
+            <div className="space-y-2">
+              <p className="text-sm">
+                {t('description')}
+              </p>
+              <p className="text-sm">
+                {locale === 'en' 
+                  ? 'We provide comprehensive recommendations for premium, established, and affordable VPN services, including Clash, Shadowrocket, V2ray, and Trojan airports. Our goal is to help you easily access global internet with stable and reliable nodes.'
+                  : '我们提供最全面的高端机场、老牌机场、便宜机场推荐，包含Clash机场、Shadowrocket机场、V2ray机场和Trojan机场等各类付费稳定翻墙节点。致力于帮助您轻松访问全球网络。'
+                }
+              </p>
+              <p className="text-sm">
+                {locale === 'en'
+                  ? 'All recommendations are carefully selected and regularly updated to ensure the best user experience.'
+                  : '所有推荐均经过精心筛选，定期更新，确保为您提供最佳的使用体验。'
+                }
+              </p>
             </div>
           </div>
-          <div className=''>
-            <h3 className="text-sm font-semibold  tracking-wider uppercase">{t('quickLinks')}</h3>
-            <ul className="mt-4 space-y-4">
-              <li>
-                <Link href="/" className="text-base ">
-                  {t('home')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/category" className="text-base">
-                  {t('category')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/article" className="text-base">
-                  {t('article')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/changelog" className="text-base">
-                  {t('changelog')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase">{t('legal')}</h3>
-            <ul className="mt-4 space-y-4">
-            <li>
-                <Link href="/" className="text-base">
-                  {t('privacy')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-base">
-                  {t('termsOfService')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase">{t('connect')}</h3>
-            <ul className="mt-4 space-y-4">
-              <li>
-                <Link href={"mailto:iamcoreychiu+devtoolsetsupport@gmail.com"} className="text-base">
-                  {t('support')}
-                </Link>
-              </li>
-             
-            </ul>
+          <div className='grid grid-cols-2 gap-8'>
+            <div>
+              <h3 className="text-sm font-semibold tracking-wider uppercase">{t('quickLinks')}</h3>
+              <ul className="mt-4 space-y-3">
+                <li>
+                  <Link href="/" className="text-sm hover:text-foreground transition-colors">
+                    {t('home')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/category" className="text-sm hover:text-foreground transition-colors">
+                    {t('category')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/article" className="text-sm hover:text-foreground transition-colors">
+                    {t('article')}
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="mt-8 border-t pt-8">
-          <p className="text-base text-center">
-            &copy; {new Date().getFullYear()} DevToolset. {t('copyright')}
+        <div className="mt-8 pt-8 border-t">
+          <p className="text-sm text-center">
+            &copy; {new Date().getFullYear()} {locale === 'en' ? 'Airport Recommendations' : '机场推荐'}. {t('copyright')}
           </p>
         </div>
       </div>
