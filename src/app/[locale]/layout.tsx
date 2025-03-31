@@ -22,16 +22,17 @@ const sansFont = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'DevToolset: Open-Source Database-free Developer Tools Navigator',
-    template: '%s | DevToolset'
+    default: '机场推荐：全网最全机场节点导航',
+    template: '%s | 机场推荐'
   },
-  description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
-  authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
+  description: '提供最全面的机场节点推荐，帮助您找到最适合的服务',
+  authors: { name: '机场推荐', url: 'https://jichangtuijian.shop/' },
   keywords: 'developer tools, dev tools, develop tool',
   alternates: {
-    canonical: "https://DevToolset.net/", languages: {
-      "en-US": "https://DevToolset.net/en/",
-      "zh-CN": "https://DevToolset.net/zh/",
+    canonical: "https://jichangtuijian.shop/", 
+    languages: {
+      "en-US": "https://jichangtuijian.shop/en/",
+      "zh-CN": "https://jichangtuijian.shop/zh/",
     }
   },
   icons: {
