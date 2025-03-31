@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   description: '提供最全面的机场节点推荐，帮助您找到最适合的服务',
   authors: { name: '机场推荐', url: 'https://jichangtuijian.shop/' },
-  keywords: 'developer tools, dev tools, develop tool',
+  keywords: '',
   alternates: {
     canonical: "https://jichangtuijian.shop/", 
     languages: {
